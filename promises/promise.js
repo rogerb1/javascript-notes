@@ -1,3 +1,10 @@
+/*
+
+  .then() is used for resolved (completed)
+  .catch() is used for rejection 
+
+*/
+
 let userLeft = true;
 let userViewsMemes = false;
 
@@ -19,6 +26,15 @@ function viewStreamPromise() {
     })
 }
 
+// the error parameter is represeting 
+// the returned reject object per say 
+// so we can use . notation to access elements
+
+// the message parameter is represeting
+// the resolved inner details
+
+// We need to call this function and then
+// do something since it returns a promise.
 viewStreamPromise().then((message) => {
     console.log('Success: ' + message)
 }).catch((error) => {
