@@ -2,9 +2,9 @@
 We say an algorithm is `o(f(n))` if the number of simple operations the computer has to do is eventually less than a constant times `f(n)`, as `n` increases.
 
 ### Types of notation
-- f(n) can be linear (f(n) = n)
-- f(n) can be quadratic (f(n) = n^2)
-- f(n) can be constant (f(n) = n)
+- f(n) can be linear (f(n) = n) slow
+- f(n) can be quadratic (f(n) = n^2) slowest
+- f(n) can be constant (f(n) = 1) faster
 
 Constants do not matter
 - o(2n) = o(n)
@@ -52,3 +52,7 @@ function addUpTo(n) {
 
 # Big O Shorthands
 - Arithmetic operations are constant
+- variable assignment is constant
+- accessing elemens in an array/object by index
+or key is constant
+- in a loop, the complexity is the length of the loop times the complexity of whatever happens inside the loop
